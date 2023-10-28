@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Add your CSS styles here for a techy design */
+    body {
+      background-color: #000;
+      color: #00FF00;
+      font-family: "Courier New", monospace;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vansh Tiwari</h1>
+  <p>Hi hello world</p>
+
+  <div id="time"></div>
+
+  <script>
+    // JavaScript to display the current time
+    function updateTime() {
+      const timeElement = document.getElementById("time");
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      timeElement.textContent = "Current Time: " + timeString;
+    }
+
+    // Update the time every second
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+</html>
